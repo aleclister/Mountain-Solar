@@ -1,1 +1,21 @@
 // Specific CSS for your home-page
+.home-container {
+    height: 94vh;
+    min-height: 860px;
+    background-color: #040d21;
+}
+
+.panels-home {
+    padding: 8rem 0 0;
+}
+
+.home-glow {
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    border-style: none;
+}
