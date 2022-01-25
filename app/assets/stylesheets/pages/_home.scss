@@ -1,8 +1,21 @@
 // Specific CSS for your home-page
 .home-container {
-    height: 94vh;
-    min-height: 860px;
+    min-height: 750px;
+    max-height: 926px;
     background-color: #040d21;
+}
+
+@media (min-width: 768px) {
+    .home-hero-container {
+        height: 94vh;
+        min-height: 860px;
+    }
+}
+
+@media (min-width: 544px) {
+    .home-hero-container {
+        min-height: 850px;
+    }
 }
 
 .panels-home {

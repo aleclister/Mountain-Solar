@@ -1,31 +1,59 @@
-<div class="navbar fixed-navbar navbar-expand-sm navbar-light navbar-lewagon">
-    <%= link_to root_path, class: "navbar-brand" do %>
-        <h3 style="color: grey;"><strong>Mountain Solar</strong></h3>
-    <% end %>
+<div class="navbar-expand-sm navbar-solar py-2">
+    <div class="navbar-container d-lg-flex flex-items-center p-responsive">
+        <div class="d-flex flex-justify-between flex-items-center">
+            <div class="navbar-logo">
+                <%= link_to root_path, class: "navbar-brand" do %>
+                    <h3 style="color: grey;"><strong>Mountain Solar</strong></h3>
+                <% end %>
+            </div>
+        </div>
+  
+        <div class="navbar-menu top-0 right-0 bottom-0 height-fit position-lg-relative d-lg-flex flex-justify-between flex-items-center flex-auto">
+            <nav class="mt-0 px-3 px-lg-0 mb-5 mb-lg-0" aria-label="Global">
+                <ul class="d-lg-flex list-style-none">
+                    <li class="active mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+                        <%= link_to "Home", root_path, class: "nav-link" %>
+                    </li>
+                    <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+                        <%= link_to "About Us", about_path, class: "navbar-menu-link no-underline py-3 d-block d-lg-inline-block" %>
+                    </li>
+                    <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+                        <%= link_to "Contact Us", contact_path, class: "nav-link" %>
+                    </li>
+                    <li class="dropdown-menu flex-auto rounded px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4 mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
+                       
+                            <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <%= link_to "Action", "#", class: "dropdown-item" %>
+                                    <%= link_to "Another action", "#", class: "dropdown-item" %>
+                                </div>
+                       
+                    </li>
+                </ul> 
+            </nav>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
 
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <%= link_to "Home", root_path, class: "nav-link" %>
-            </li>
-            <li class="nav-item">
-                <%= link_to "About Us", about_path, class: "nav-link" %>
-            </li>
-            <li class="nav-item">
-                <%= link_to "Contact Us", contact_path, class: "nav-link" %>
-            </li>
-            <li class="nav-item dropdown">
-                <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <%= link_to "Action", "#", class: "dropdown-item" %>
-                <%= link_to "Another action", "#", class: "dropdown-item" %>
-                </div>
-            </li>
-        </ul>
+            <%# <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        
+                    </li>
+                    <li class="nav-item">
+                        
+                    </li>
+                    <li class="nav-item">
+                        
+                    </li>
+                    <li class="nav-item dropdown">
+                        
+                    </li>
+                </ul>
+            </div> %>
+        </div>
     </div>
 </div>

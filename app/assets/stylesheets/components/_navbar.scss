@@ -1,17 +1,110 @@
-.navbar-lewagon {
+.navbar-solar {
+  position: absolute !important;
   justify-content: space-between;
-  background: transparent;
+  background-color: transparent;
   transition: 0.5s background-color ease;
+  z-index: 32;
+  right: 0;
+  left: 0;
+  color: #fff;
+  font-size: 16px !important;
 }
 
-.navbar-lewagon-white {
+.navbar-container {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex !important;
+  align-items: center !important;
+  padding-right: 16px !important;
+  padding-left: 16px !important;
+  background-color: transparent !important;
+}
+
+
+.navbar-logo {
+  width: auto;
+  overflow: visible;
+  background-color: transparent;
+  box-shadow: none;
+  z-index: 100;
+  display: flex !important;
+  max-height: 100% !important;
+  bottom: 0 !important;
+  top: 0 !important ;
+  right: 0 !important;
+  position: relative !important;
+}
+
+.navbar-menu {
+  z-index: 100;
+  width: 300px;
+  overflow: auto;
+  background-color: lightgray;
+  // box-shadow: 0 10px 50px rgb(27 31 35 / 15%);
+  display: none;
+  clear: both;
+}
+
+@media (min-width: 1012px) {
+  .navbar-menu {
+      width: auto;
+      overflow: visible;
+      background-color: transparent;
+      box-shadow: none;
+      display: block;
+      clear: none;
+  }
+}
+
+.navbar-solar .dropdown-menu {
+  position: static;
+  width: auto;
+  border: 0 solid transparent;
+  box-shadow: none;
+}
+
+
+@media (min-width: 1012px) {
+  .navbar-solar .dropdown-menu {    
+    position: absolute;
+    width: 300px;
+    border: 0;
+    // box-shadow: 0 3px 12px rgb(27 31 35 / 15%), 0 0 1px rgb(27 31 35 / 20%); 
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  width: 160px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 2px;
+  list-style: none;
   background-color: white;
+  background-clip: padding-box;
+  border: 1px solid grey;
+  border-radius: 6px;
+  // box-shadow: var(--color-shadow-large);
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
+.navbar-solar .navbar-brand img {
   width: 40px;
+}
+
+.navbar-menu-link {
+  color: black;
+  white-space: nowrap;
+  background: transparent;
+  transition: opacity .4s;
+}
+
+@media (min-width: 1012px) {
+  .navbar-menu-link {
+      color: #fff;
+      transition: opacity .4s;
+  }
 }

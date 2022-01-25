@@ -1,0 +1,58 @@
+.p-responsive {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+}
+
+.px-0 { 
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+.px-3 {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+}
+
+.py-2 {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+.pb-4 {
+    padding-bottom: 24px !important;
+}
+
+@media (min-width: 1012px) {
+    .p-responsive {
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+    }
+
+    .px-lg-0 {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .px-lg-3 {
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+    }
+
+    .p-lg-4 {
+        padding: 24px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .pb-md-9 {
+        padding-bottom: 80px;
+    }
+}
+
+@media (min-width: 544px) {
+    .p-responsive {
+        padding-right: 40px !important;
+        padding-left: 40px !important;  
+    }
+}
