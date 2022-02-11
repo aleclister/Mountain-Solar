@@ -4,10 +4,14 @@
     }
 }
 
-.border-bottom {
-    border-bottom: 1px solid lightgray !important;
-}
+// .border-bottom {
+//     border-bottom: 1px solid lightgray !important;
+// }
 
 .rounded {
     border-radius: 6px !important;
+}
+
+.border-0 {
+    border: 0 !important;
 }

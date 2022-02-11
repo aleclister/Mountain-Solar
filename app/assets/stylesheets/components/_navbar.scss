@@ -1,13 +1,21 @@
+.navbar-solar .navbar-collapse {
+  flex-grow: 0;
+}
+
 .navbar-solar {
   position: absolute !important;
   justify-content: space-between;
   background-color: transparent;
   transition: 0.5s background-color ease;
   z-index: 32;
+  width: 100vw;
   right: 0;
   left: 0;
   color: #fff;
   font-size: 16px !important;
+  display: flex;
+  padding: 0;
+  align-items: center;
 }
 
 .navbar-container {
@@ -21,6 +29,29 @@
   background-color: transparent !important;
 }
 
+.navbar-list-end {
+  align-items: center !important;
+  display: flex;
+  margin: 0;
+  transition: transform .5s ease;
+  position: relative;
+  z-index: 1;
+  color: white !important;
+  text-decoration: none !important;
+  padding: 0 32px 0 0;
+}
+
+.navbar-list-end li {
+  margin-right: 16px;
+  padding: 8px 4px;
+  align-items: center !important;
+}
+
+.tds-site-nav-item-text {
+  color: white;
+  margin: 0 8px;
+  transition: color .33s ease;
+}
 
 .navbar-logo {
   width: auto;
@@ -33,7 +64,10 @@
   bottom: 0 !important;
   top: 0 !important ;
   right: 0 !important;
+  left: 30px;
   position: relative !important;
+  padding: 0;
+  align-items: center !important;
 }
 
 .navbar-menu {
@@ -46,6 +80,33 @@
   clear: both;
 }
 
+.HeaderMenu-link {
+  color: black;
+  white-space: nowrap;
+  background: transparent;
+  transition: opacity .4s;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.no-wrap {
+  white-space: nowrap !important;
+}
+
+.details summary {
+  cursor: pointer;
+}
+
+summary {
+  display: list-item;
+}
+
+.details-reset>summary {
+  list-style: none;
+}
+
 @media (min-width: 1012px) {
   .navbar-menu {
       width: auto;
@@ -55,6 +116,35 @@
       display: block;
       clear: none;
   }
+  .HeaderMenu-link:hover {
+    color: #fff;
+    opacity: .75;
+  }
+
+  .HeaderMenu-link .icon-chevon-down-mktg {
+    top: 24px;
+    right:-17px;
+    width: 12px;
+    stroke: rgba(255,255,255,.5);
+    background: transparent;
+}
+}
+
+.HeaderMenu-link:hover {
+  color: #fff;
+  opacity: .75;
+}
+
+// .HeaderMenu-link .icon-chevon-down-mktg {
+//   top: 24px;
+//   right: 0;
+//   width: 14px;
+//   stroke: black;
+//   transition: stroke .4s;
+// }
+
+svg:not(:root) {
+  overflow: hidden;
 }
 
 .navbar-solar .dropdown-menu {
@@ -70,9 +160,16 @@
     position: absolute;
     width: 300px;
     border: 0;
-    // box-shadow: 0 3px 12px rgb(27 31 35 / 15%), 0 0 1px rgb(27 31 35 / 20%); 
+  }
+  .HeaderMenu-link {
+    color: #fff;
+    transition: opacity .4s;
+  }
+  .d-lg-inline-block {
+    display: inline-block !important;
   }
 }
+
 
 .dropdown-menu {
   position: absolute;

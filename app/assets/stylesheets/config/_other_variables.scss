@@ -18,6 +18,10 @@
     position: fixed !important;
 }
 
+.text-style-none {
+    text-decoration: none;
+}
+
 
 @media (min-width: 1012px) {
     .h1-mktg {
@@ -85,4 +89,8 @@
 
 .no-underline {
     text-decoration: none !important;
+}
+
+.lh-condensed-ultra {
+    line-height: 1 !important;
 }
