@@ -2,6 +2,17 @@
   flex-grow: 0;
 }
 
+.navbar {
+  z-index: 2;
+  text-decoration: none;
+  color: #fff;
+  align-items: center;
+}
+
+.navbar a {
+  color: #fff;
+}
+
 .navbar-solar {
   position: absolute !important;
   justify-content: space-between;
@@ -45,6 +56,10 @@
   margin-right: 16px;
   padding: 8px 4px;
   align-items: center !important;
+}
+
+.nav-item {
+  line-height: 2.3;
 }
 
 .tds-site-nav-item-text {
